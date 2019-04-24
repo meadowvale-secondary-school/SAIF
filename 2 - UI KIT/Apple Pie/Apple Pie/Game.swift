@@ -18,6 +18,17 @@ struct Game {
             incorrectMovesRemaining -= 1
         }
     }
+    var formattedWord: String {
+        var guessedWord = ""
+        for letter in word {
+            if guessedLetters.contains(letter) {
+                guessedWord += "\(letter)"
+            } else {
+                guessedWord += "_"
+            }
+        }
+        return guessedWord
+    }
 }
 
 
