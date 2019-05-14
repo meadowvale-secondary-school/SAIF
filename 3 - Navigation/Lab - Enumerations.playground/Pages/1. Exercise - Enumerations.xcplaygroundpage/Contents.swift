@@ -39,15 +39,32 @@ getFortune(cardSuit: .spades)
 /*:
  Create a `Card` struct below. It should have two properties, one for `suit` of type `Suit` and another for `value` of type `Int`.
  */
-struct Card{
+struct Card {
     enum Value {
-        
+        case ace
+        case two
+        case three
+        case four
+        case five
+        case six
+        case seven
+        case eight
+        case nine
+        case ten
+        case jack
+        case queen
+        case king
     }
+    var suit: Suit
+    var num:Int
 }
 
 /*:
  How many values can playing cards have? How many values can `Int` be? It would be safer to have an enum for the card's value as well. Inside the struct above, create an enum for `Value`. It should have cases for `ace`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `jack`, `queen`, `king`. Change the type of `value` from `Int` to `Value`. Initialize two `Card` objects and print a statement for each that details the card's value and suit.
  */
-
+let fourOfHearts = Card(suit: hearts, value: .four)
+let sixOfClubs = Card (suit: .clubs, value: .six)
+print("The \(fourOfHearts.value) of \(fourOfHearts.suit).")
+print("The \(sixOfClubs.value) of \(sixOfClubs.suit).")
 
 //: page 1 of 2  |  [Next: App Exercise - Swimming Workouts](@next)
