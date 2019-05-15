@@ -4,7 +4,10 @@
  Define a `Suit` enum with four possible cases: `clubs`, `spades`, `diamonds`, and `hearts`.
  */
 enum Suit {
-    case clubs, spades, diamonds, hearts
+    case clubs
+    case spades
+    case diamonds
+    case hearts
 }
 
 /*:
@@ -56,15 +59,15 @@ struct Card {
         case king
     }
     var suit: Suit
-    var num:Int
+    var num: Value
 }
 
 /*:
  How many values can playing cards have? How many values can `Int` be? It would be safer to have an enum for the card's value as well. Inside the struct above, create an enum for `Value`. It should have cases for `ace`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `jack`, `queen`, `king`. Change the type of `value` from `Int` to `Value`. Initialize two `Card` objects and print a statement for each that details the card's value and suit.
  */
-let fourOfHearts = Card(suit: hearts, value: .four)
-let sixOfClubs = Card (suit: .clubs, value: .six)
-print("The \(fourOfHearts.value) of \(fourOfHearts.suit).")
-print("The \(sixOfClubs.value) of \(sixOfClubs.suit).")
+let fourOfHearts = Card (suit: .hearts, num: .four)
+let sixOfClubs = Card (suit: .clubs, num: .six)
+print("The \(fourOfHearts.num) of \(fourOfHearts.suit).")
+print("The \(sixOfClubs.num) of \(sixOfClubs.suit).")
 
 //: page 1 of 2  |  [Next: App Exercise - Swimming Workouts](@next)

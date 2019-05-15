@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+     @IBOutlet weak var userNameText: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender == forgotPassword {
+            segue.destination.navigationItem.title = "Forgot Password"
+        } else if sender == forgotUsername {
+            segue.destination.navigationItem.title = "Forgot Username"
+        } else {
+            segue.destination.navigationItem.title = userNameText.text
+        }
+    }
 
-
+   
 }
 
