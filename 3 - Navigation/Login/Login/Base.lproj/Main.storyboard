@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pX5-an-eI4">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -44,15 +44,6 @@
                                     <segue destination="Zh0-cN-5WE" kind="show" id="xzJ-On-tj1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU9-70-EZz">
-                                <rect key="frame" x="233" y="545" width="137" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.83767320820000002" green="0.442410205" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Forgot Password?">
-                                    <color key="titleShadowColor" red="0.59583360939999996" green="1" blue="0.60076270430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UB2-95-hvp">
                                 <rect key="frame" x="39" y="545" width="137" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,19 +52,43 @@
                                 <state key="normal" title="Forgot User Name?">
                                     <color key="titleShadowColor" red="0.59583360939999996" green="1" blue="0.60076270430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Zh0-cN-5WE" kind="show" id="p69-ON-Cty"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU9-70-EZz">
+                                <rect key="frame" x="233" y="545" width="137" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.83767320820000002" green="0.442410205" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleShadowColor" red="0.59583360939999996" green="1" blue="0.60076270430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zh0-cN-5WE" kind="show" id="Ty8-8h-9oZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WELCOME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o5f-dn-f8j">
+                                <rect key="frame" x="113" y="142" width="188" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.78986368838677246" blue="0.84155921813886403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="xF6-uG-r9f"/>
                     <connections>
+                        <outlet property="forgotPassword" destination="gU9-70-EZz" id="2pF-n5-8lc"/>
+                        <outlet property="forgotUserName" destination="UB2-95-hvp" id="g6O-hr-H53"/>
                         <outlet property="userNameText" destination="FBR-t8-Exm" id="MAq-sw-wjg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.81159420289862" y="113.83928571428571"/>
+            <point key="canvasLocation" x="836" y="114"/>
         </scene>
         <!--Title-->
         <scene sceneID="C6d-X0-j2u">
@@ -110,4 +125,7 @@
             <point key="canvasLocation" x="114" y="114"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="p69-ON-Cty"/>
+    </inferredMetricsTieBreakers>
 </document>
