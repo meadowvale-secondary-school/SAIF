@@ -14,6 +14,7 @@
 		F367B701229D7599000B74A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F367B6FF229D7599000B74A4 /* LaunchScreen.storyboard */; };
 		F367B709229D7CF3000B74A4 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367B708229D7CF3000B74A4 /* QuestionViewController.swift */; };
 		F367B70B229D7D16000B74A4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367B70A229D7D16000B74A4 /* ResultsViewController.swift */; };
+		F367B70D229E4927000B74A4 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367B70C229E4927000B74A4 /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F367B702229D7599000B74A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F367B708229D7CF3000B74A4 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		F367B70A229D7D16000B74A4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F367B70C229E4927000B74A4 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F367B6F6229D7597000B74A4 /* AppDelegate.swift */,
 				F367B6F8229D7597000B74A4 /* ViewController.swift */,
 				F367B6FA229D7597000B74A4 /* Main.storyboard */,
+				F367B70C229E4927000B74A4 /* QuestionData.swift */,
 				F367B70A229D7D16000B74A4 /* ResultsViewController.swift */,
 				F367B708229D7CF3000B74A4 /* QuestionViewController.swift */,
 				F367B6FD229D7599000B74A4 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				F367B6F9229D7597000B74A4 /* ViewController.swift in Sources */,
 				F367B6F7229D7597000B74A4 /* AppDelegate.swift in Sources */,
+				F367B70D229E4927000B74A4 /* QuestionData.swift in Sources */,
 				F367B709229D7CF3000B74A4 /* QuestionViewController.swift in Sources */,
 				F367B70B229D7D16000B74A4 /* ResultsViewController.swift in Sources */,
 			);
