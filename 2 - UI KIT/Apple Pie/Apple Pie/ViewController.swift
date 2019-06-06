@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    var listOfWords = ["apple","school","imac","macbook"]
+    var listOfWords = ["aryan","physics","science"]
     let incorrectMovesAllowed = 6
     var totalWins = 0{
         didSet { newRound()

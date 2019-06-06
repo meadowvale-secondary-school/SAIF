@@ -64,7 +64,7 @@ var questions:
         ]
         ),
 
-     Question(text: "Which food do you like the most?", type: .multiple,
+     Question(text: "What foods do you like the most?", type: .multiple,
             answers: [
                 Answer(text: "Steak", type: .dog),
                 Answer(text: "Fish", type: .cat),
